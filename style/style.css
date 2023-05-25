@@ -80,21 +80,81 @@ body {
     color: var(--Grayish-Blue);
 }
 
-#form {
+.form {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
 }
 
-#form input {
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form-control input {
     width: 100%;
     padding: 16px;
+    display: block;
     border-radius: 5px;
     border: 1px solid var(--Grayish-Blue);
     color: var(--Dark-Blue);
     font-weight: 700;
     font-family: var(--font);
 }
+
+.form-control i {
+    position: absolute;
+    top: 19px;
+    right: 15px;
+    visibility: hidden;
+}
+
+.form-control small {
+    display: block;
+    text-align: end;
+    visibility: hidden;
+}
+
+.form-control.success input{
+    border-color: var(--Green);
+}
+
+.form-control.success i.fa-circle-check {
+    visibility: visible;
+    color: var(--Green);
+}
+
+.form-control.error input {
+    border-color: var(--Red);
+    color: var(--Red);
+}
+
+.form-control.error i.fa-circle-exclamation {
+    visibility: visible;
+    color: var(--Red);
+}
+
+.form-control.error small {
+    color: var(--Red);
+    visibility: visible;
+}
+
+.form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    background-color: var(--Green);
+    color: #fff;
+    font-family: var(--font);
+    font-weight: 600;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.171);
+}
+
+
 
 
 
