@@ -51,7 +51,16 @@ body {
 }
 
 #header p {
-    width: 280px;
+    width: 100%;
+    font-family: var(--font);
+    font-size: 17px;
     margin: 50px auto;
     color: var(--Grayish-Blue);
+}
+
+#promotion {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--Blue);
 }
