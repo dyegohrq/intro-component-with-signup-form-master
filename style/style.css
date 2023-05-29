@@ -47,6 +47,7 @@ body {
 
 #header h1 {
     font-size: 30px;
+    font-family: var(--font);
     color: white;
 }
 
@@ -85,6 +86,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.289);
 }
 
 .form-control {
@@ -204,6 +206,55 @@ body {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-image: url(../images/bg-intro-desktop.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+
+    #conteiner {
+        display: flex;
+        width: 1000px;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #header {
+        width: 400px;
+        text-align: left;
+    }
+
+    #header h1 {
+        font-size: 35px;
+    }
+
+    #header p {
+        font-size: 12px;
+        margin: 20px auto;
+    }
+
+    #main {
+        width: 400px;
+    }
+
+    #promotion p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #form {
+        
+    }
+
+    #footer p {
+        font-size: 9px;
+    }
 }
 
 
