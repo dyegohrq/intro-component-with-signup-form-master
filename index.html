@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="assets/style/style.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="text-present">
+      <h1 class="text-present-1">Learn to code by watching others</h1>
+      <p class="text-present-2">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </div>
+    <div class="form-control">
+      <div class="card"><h2>Try it free 7 days <span>then $20/mo. thereafter</span></h2></div>
+      <form action="" id="form">
+
+        <div class="form-input">
+          <input type="text" id="name" class="name" placeholder="First Name">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <span class="errorMessage" id="errorMessage">Mensagem de error</span>
+        </div>
+
+        <div class="form-input">
+          <input type="text" id="last-name" class="last-name" placeholder="Last Name">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <span class="errorMessage" >Mensagem de error</span>
+        </div>
+
+        <div class="form-input">
+          <input type="text" id="email" class="email" placeholder="Email Address">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <span class="errorMessage">Mensagem de error</span>
+        </div>
+
+        <div class="form-input">
+          <input type="text" id="password" class="password" placeholder="Password">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <span class="errorMessage">Mensagem de error</span>
+        </div>
+
+        <button type="submit" class="button">Claim your free trial</button>
+        <div class="terms">
+          <p class="text-present-3">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Dyego henrique</a>.
+    </p>
+  </footer>
+
+  <!-- Script -->
+  <script src="assets/js/script.js"></script>
+  <script src="https://kit.fontawesome.com/24690ddc1f.js" crossorigin="anonymous"></script>
+</body>
+</html>

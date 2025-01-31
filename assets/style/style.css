@@ -1,0 +1,248 @@
+:root {
+    /* ## Colors */
+    /* ### Primary */
+    
+    --Red: #ff7a7a ;
+    --Green: #38cc8c;
+    
+    /* ### Accent */
+    
+    --Blue: #6055a5;
+    
+    /* ### Neutral */
+    
+    --Dark-Blue: #3e3c49 ;
+    --Grayish-Blue: #b9b6d3;
+    --white: #fff;
+}
+
+/* General config */
+
+* {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--Red) url(../images/bg-intro-mobile.png) no-repeat center / cover;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background: var(--Red) url(../images/bg-intro-desktop.png) no-repeat center / cover;
+    }
+}
+
+/* Typography */
+.text-present-1 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.29px;
+    color: var(--white);
+}
+
+.text-present-2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: var(--white);
+}
+
+.text-present-3, span {
+    font-size: 11px;
+    line-height: 21px;
+    letter-spacing: 0;
+    font-weight: 500;
+    color: var(--Grayish-Blue);
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 527px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1030px) {
+    .container {
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: space-around;
+    }
+}
+
+/* text present */
+.text-present {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1030px) {
+    .text-present {
+        max-width: 525px;
+        text-align: left;
+    }
+}
+
+/* Form control */
+.form-control {
+    margin-top: 64px;
+    width: 100%;
+    max-width: 540px;
+}
+
+.form-control .card {
+    width: 100%;
+    background-color: var(--Blue);
+    padding: 18px 66px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0 rgba(0, 0, 0, 0.140);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.form-control .card h2 {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.27px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.form-control .card h2 span {
+    font-weight: 500;
+}
+
+.form-control #form {
+    background-color: var(--white);
+    padding: 24px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 8px 0 rgba(0, 0, 0, 0.140);
+}
+
+.form-control .form-input {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.form-control .form-input input[type='text'] {
+    width: 100%;
+    padding: 15px 19px;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+}
+
+.form-control .invalid input[type='text']{
+    border: 1px solid var(--Red);
+}
+
+.form-control .valid input[type='text']{
+    border: 1px solid var(--Green);
+}
+
+.form-control input[type='text']::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    opacity: 0.75;
+    color: var(--Dark-Blue);
+}
+
+.form-control .form-input i {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    font-size: 24px;
+    color: var(--Red);
+    display: none;
+}
+
+.form-control .invalid i {
+    display: block;
+} 
+
+.form-control .form-input span {
+    width: 11px;
+    font-weight: 500;
+    text-align: right;
+    display: none;
+    width: 100%;
+    color: var(--Red);
+    font-style: italic;
+    margin-top: 6px;
+}
+
+.form-control .invalid span {
+    display: block;
+} 
+
+.form-control .button {
+    border: none;
+    width: 100%;
+    padding: 15px 45px;
+    border-radius: 5px;
+    background: var(--Green);
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form-control #form .terms {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control #form .text-present-3 {
+    width: 100%;
+    max-width: 249px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1030px) {
+    .form-control #form .text-present-3 {
+        max-width: 100%;
+    }
+}
+
+.form-control #form .text-present-3 span {
+    color: var(--Red);
+}
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+    margin-top: 50px;
+    color: var(--white);
+}
+    
+.attribution a { 
+    color: var(--Blue);
+    text-decoration: none; 
+}
